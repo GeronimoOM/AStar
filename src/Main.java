@@ -53,7 +53,9 @@ public class Main {
 	public static void start(){
 		//I have added this line=)
     	try {
+
     		displayMode = new DisplayMode(960, 540);
+
     		Display.setDisplayMode(displayMode);
     		Display.create();
     	} catch (LWJGLException e) {
