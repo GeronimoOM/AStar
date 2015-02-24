@@ -37,7 +37,7 @@ public class Main {
     static AStarPathFinder finder;
     
     static long passedTime = 0;
-    static long algAnimInterval = 200;
+    static long algAnimInterval = 100;
     static long finAnimInterval = 500;
     
     static boolean finAnimBool = true;
@@ -46,15 +46,14 @@ public class Main {
     static boolean finished = false;
     
     public static void main(String []args){
-    	genGrid(50, 40, 0.3);
+    	genGrid(80, 70, 0.2);
     	start();
     }
 
 	public static void start(){
-		//I have added this line=)
     	try {
     		for(int i=0; i<3;i++){
-    			displayMode = new DisplayMode(450, 300);
+    			displayMode = new DisplayMode(1920, 1080);
     			}
     		Display.setDisplayMode(displayMode);
     		Display.create();
